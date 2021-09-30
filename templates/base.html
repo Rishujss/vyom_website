@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyom_Website</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome_css/all.css') }}">
+    {% block contactstyle %}
+
+    {% endblock contactstyle %}
+    <!-- End of Stylesheet -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="header">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <button class=" navbar-toggler ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar01"
+                aria-controls="Navbar01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <a class="navbar-brand" href="/"><img class="rounded-circle" src="../assests/images/logo1.png" height="35"
+                    width="41" /></a>
+            <a class="navbar-brand" href="/"><img class="rounded-circle" src="../assests/images/jss.svg" height="25"
+                    width="41" /></a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="Navbar01">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link pl-0 {% block active_home %}
+                        {% endblock active_home %}" href="/"><i class="bi bi-house-door pr-1"></i>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  pl-0  {% block active_events %}
+                        {% endblock active_events %}" href="events"><i class="bi bi-calendar-check pr-1"></i>Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  pl-0 {% block active_team %}
+                            
+                        {% endblock active_team %}" href="team"><i class="bi bi-people pr-1"></i>team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link pl-0  {% block active_art %}
+                            
+                        {% endblock active_art %}" href="art"><i class="bi bi-palette pr-1 "></i>Art and
+                            Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link pl-0  {% block active_about %}
+                            
+                        {% endblock active_about %}" href="about"><i class="bi bi-info-circle pr-1"></i>About</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link pl-0  {% block active_contact %}
+                        
+                        {% endblock active_contact %}" href="contact"><i
+                                class="bi bi-journal-bookmark pr-1"></i>Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    {% block body %}
+
+    {% endblock body %}
+
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    </script>
+    <script src="{{ url_for('static', filename='js/fontawesome_js/all.js') }}"></script>
+    <!-- End of Scripts -->
+
+</body>
+
+</html>

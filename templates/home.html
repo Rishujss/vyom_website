@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block active_home %}
+active
+{% endblock active_home %}
+{% block body %}
+
+<section class="jumbotron" id="hero">
+    <div class="container" id="msgDiv">
+        <h1> व्योम </h1>
+        <h2>हिन्दी साहित एवं कला संगठन | </h2>
+    </div>
+</section>
+
+<main id="main">
+    <section class="header_carousel_container">
+        <!--CAROUSEL-->
+        <div id="headercarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-danger">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="../assests/images/carousel1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="../assests/images/carousel2.png" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block img-fluid " src="../assests/images/carousel3.png" alt="">
+                </div>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-bs-target="#headercarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></li>
+                    <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    </li>
+                    <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                    </li>
+                </ul>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" type="button" data-bs-target="#headercarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" type="button" data-bs-target="#headercarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section id="top-poem">
+        <div class="row-header d-flex justify-content-center p-4">
+            <h3 class="top-poem-heading">Top Poems</h3>
+        </div>
+        <div class="cards">
+            <div class="card col-lg-2 col-sm-5 bg-success align-items-center round">
+                <img src="../assests/images/logo1.png" class="card-img-top img-fluid" alt="top-poem-4">
+                <div class="card-body">
+                    <h2 class="card-title">Poem1-The First</h2>
+                    <p class="card-desc text-justify">Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corrupti quas deleniti
+                        iusto. Eius delectus dolore aliquid fugit consequatur id! Saepe, labore eius.
+                    </p>
+                </div>
+            </div>
+            <div class="card col-lg-2 col-sm-5 bg-warning align-items-center round">
+                <img src="../assests/images/logo1.png" class="card-img-top img-fluid" alt="top-poem-4">
+                <div class="card-body">
+                    <h2 class="card-title">Poem2-The Second</h2>
+                    <p class="card-desc text-justify">Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corrupti quas deleniti
+                        iusto. Eius delectus dolore aliquid fugit consequatur id! Saepe, labore eius.
+                    </p>
+                </div>
+            </div>
+            <div class="card col-lg-2 col-sm-5 bg-danger align-items-center round">
+                <img src="../assests/images/logo1.png" class="card-img-top img-fluid" alt="top-poem-4">
+                <div class="card-body">
+                    <h2 class="card-title">Poem3-the Third</h2>
+                    <p class="card-desc text-justify">Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corrupti quas deleniti
+                        iusto. Eius delectus dolore aliquid fugit consequatur id! Saepe, labore eius.
+                    </p>
+                </div>
+            </div>
+            <div class="card col-lg-2 col-sm-5 bg-dark align-items-center round">
+                <img src="../assests/images/logo1.png" class="card-img-top img-fluid" alt="top-poem-4">
+                <div class="card-body">
+                    <h2 class="card-title">Poem4-The Fourth</h2>
+                    <p class="card-desc text-justify">Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corrupti quas deleniti
+                        iusto. Eius delectus dolore aliquid fugit consequatur id! Saepe, labore eius.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock body %}
