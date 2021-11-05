@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import json
@@ -21,6 +21,7 @@ class Contacts(db.Model):
     email = db.Column(db.String(25), nullable=False)
     phonenum = db.Column(db.String(12), nullable=False)
     message = db.Column(db.String(200), nullable=False)
+    dateposted = db.Column(db.String(12), nullable=True)
 
 
 @ app.route("/", methods=['GET', 'POST'])
@@ -56,7 +57,7 @@ def contact():
         phone_req = request.form.get('phonenum')
         message_req = request.form.get('message')
         entry = Contacts(name=name_req, email=email_req,
-                         phonenum=phone_req, message=message_req)
+                         phonenum=phone_req, message=message_req, dateposted=datetime.now())
         print(request.form['message'])
         db.session.add(entry)
         db.session.commit()
@@ -66,16 +67,24 @@ def contact():
 @ app.route("/admin", methods=['GET', 'POST'])
 def admin():
     if "user" in session and session['user'] == params['admin_user']:
-        return render_template("dashboard.html")
+        forms = Contacts.query.all()
+        return render_template("admin.html", params=params, forms=forms)
     if request.method == "POST":
         username = request.form.get("uname")
         userpass = request.form.get("pass")
         if username == params['admin_user'] and userpass == params['admin_password']:
             # set the session variable
             session['user'] = username
-            return render_template("dashboard.html")
+            forms = Contacts.query.all()
+            return render_template("admin.html", params=params, forms=forms)
     else:
-        return render_template('admin.html')
+        return render_template('login.html')
+
+
+@ app.route('/logout', methods=['GET', 'POST'])
+def logout():
+    session.pop('user')
+    return redirect('/admin')
 
 
 if __name__ == "__main__":
