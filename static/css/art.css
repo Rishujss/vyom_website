@@ -7,6 +7,7 @@
     display: flex;
     padding: 2px;
     transition: 0.3s;
+    margin-top: 125px;
   }
   .gallery:hover .gallery__image {
     filter: grayscale(1);

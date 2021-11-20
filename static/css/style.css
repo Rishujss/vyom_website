@@ -9,6 +9,7 @@ html,body{
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: rgba(21, 34, 43, 0.85);
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -95,14 +96,6 @@ html,body{
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
-}
-.signup{
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-  border: none;
-}
-.signup:hover {
-  color: #fff;
-  background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
 }
 
 .bi-list{

@@ -7,10 +7,10 @@
   
   body {
     font-family: "Open Sans", sans-serif;
-    background: #333;
+    background: #f8f873;
   }
   .team_container{
-    margin-top: 75px;
+    margin-top: 125px;
     justify-content: space-evenly;
 
   }
@@ -172,22 +172,7 @@
     opacity: 1;
   }
 
-
-
-
-
-
-
-
 /* have */
-
-
-
-
-
-
-
-
 
 @import "https://fonts.googleapis.com/css?family=Do+Hyeon";
 *,
@@ -198,7 +183,7 @@
   box-sizing: border-box;
 }
 .devloper_container{
-  background: rgba(10, 10, 10, 0.8);
+  background: rgb(111 111 51 / 80%);
 }
 .clear-fix:after {
   display: block;
