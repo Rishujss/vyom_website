@@ -9,7 +9,7 @@ html,body{
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background: rgba(21, 34, 43, 0.85);
+  background: rgba(28, 52, 69, 0.5);
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -58,7 +58,7 @@ html,body{
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(199, 115, 115, 0.9);
+  color: rgba(131, 70, 70, 0.9);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -76,7 +76,7 @@ html,body{
   height: 2px;
   bottom: -6px;
   right: 0;
-  background-color: #ff4a17;
+  background-color: #610a0ac4;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -88,7 +88,7 @@ html,body{
 }
 
 .navbar-collapse a:hover, .navbar-collapse .active, .navbar-collapse .active:focus, .navbar-collapse li:hover > a {
-  color: rgb(228, 70, 70);
+  color: rgb(136, 20, 20);
 }
 
 .navbar-btn{
@@ -106,7 +106,7 @@ html,body{
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url(/assests/images/advertise.jpg) top center;
+  background: url( ../images/vyomfamily.JPG) top center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,7 +116,7 @@ html,body{
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0,0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -171,8 +171,8 @@ html,body{
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #ff4a17;
-  border: 2px solid #ff4a17;
+  background: #ff1717;
+  border: 2px solid #ff1717;
 }
 
 #hero .btn-get-started:hover {
@@ -200,7 +200,7 @@ html,body{
 }
 
 #hero .btn-watch-video:hover i {
-  color: #ff4a17;
+  color: #ff1717;
 }
 main{
   width: 100vw;
