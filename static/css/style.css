@@ -58,7 +58,7 @@ html,body{
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(131, 70, 70, 0.9);
+  color: rgba(247, 240, 240, 0.9);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -76,7 +76,7 @@ html,body{
   height: 2px;
   bottom: -6px;
   right: 0;
-  background-color: #610a0ac4;
+  background-color: #e0a8a8c4;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -88,7 +88,7 @@ html,body{
 }
 
 .navbar-collapse a:hover, .navbar-collapse .active, .navbar-collapse .active:focus, .navbar-collapse li:hover > a {
-  color: rgb(136, 20, 20);
+  color: rgb(218, 195, 195);
 }
 
 .navbar-btn{
