@@ -206,7 +206,6 @@
 .card__collection .cards {
   width: 300px;
   height: 400px;
-  display: block;
   background-size: cover;
   float: left;
   border-radius: 15px;
@@ -307,7 +306,7 @@
   transition: all 0.6s ease;
 }
 .card__collection .cards--two:hover p {
-  left: 8%;
+  left: 1%;
 }
 .card__collection .cards--two:hover img {
   transform: translateY(-15px);
