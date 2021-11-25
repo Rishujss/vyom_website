@@ -250,7 +250,6 @@ html,body{
 .footer-social-link ul {
   list-style-type: none;
   padding: 0 10px;
-  margin: 0; 
 }
 .footer-social-link li {
   display: inline-block; 
@@ -299,4 +298,14 @@ html,body{
   font-size: 1.5em;
   text-align: justify;
   color: rgb(112, 56, 56);
+}
+@media (max-width: 420px) {
+  .left{
+    margin: auto;
+    
+  }
+  .right{
+    margin: auto;
+    width: 75%;
+  }
 }

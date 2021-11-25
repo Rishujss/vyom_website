@@ -1,5 +1,4 @@
 .art_container{
-    margin-top: 75px;
     justify-content: space-evenly;
 
   }
@@ -7,7 +6,6 @@
     display: flex;
     padding: 2px;
     transition: 0.3s;
-    margin-top: 125px;
   }
   .gallery:hover .gallery__image {
     filter: grayscale(1);

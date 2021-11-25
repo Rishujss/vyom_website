@@ -18,7 +18,7 @@ active
                         <div class="form-group row">
                             <label for="name" class="col-md-2 col-form-label">Name</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                <input type="text" class="form-control" id="name" name="names" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -28,9 +28,10 @@ active
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="telnum" class="col-12 col-md-2 col-form-label">Contact No.</label>
+                            <label for="telnum" class="col-12 col-md-2 col-form-label" pattern="[0-9]{10}">Mobile
+                                number</label>
                             <div class="col-md-10">
-                                <input type="tel" class="form-control" id="telnum" name="telnum"
+                                <input type="tel" class="form-control" id="telnum" name="phonenum"
                                     placeholder="Mobile number">
                             </div>
                         </div>
@@ -39,7 +40,7 @@ active
                     <div class="form-group row">
                         <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
                         <div class="col-md-6">
-                            <textarea class="form-control" name="feedback" id="feedback" cols="10" rows="5"></textarea>
+                            <textarea class="form-control" name="message" id="feedback" cols="10" rows="5"></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
