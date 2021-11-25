@@ -44,6 +44,11 @@ def art():
     return render_template('art.html')
 
 
+@ app.route("/gallery", methods=['GET', 'POST'])
+def gallery():
+    return render_template('gallery.html')
+
+
 @ app.route("/about", methods=['GET', 'POST'])
 def about():
     return render_template('aboutus.html')
@@ -61,7 +66,7 @@ def contact():
         print(request.form['message'])
         db.session.add(entry)
         db.session.commit()
-    return render_template('contact.html')
+    return render_template('contactus.html')
 
 
 @ app.route("/admin", methods=['GET', 'POST'])

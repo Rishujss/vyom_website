@@ -13,20 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome_css/all.css') }}">
-    {% block contactstyle %}
-
-    {% endblock contactstyle %}
     <!-- End of Stylesheet -->
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" id="header">
+    <nav class="navbar navbar-expand-lg" id="header">
         <div class="container-fluid d-flex align-items-center justify-content-between">
-            <button class=" navbar-toggler ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar01"
-                aria-controls="Navbar01" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button>
             <a class="navbar-brand" href="/"><img class="rounded-circle" src="../assests/images/logo1.png" height="35"
                     width="41" /></a>
 
@@ -47,7 +40,13 @@
                     <li class="nav-item">
                         <a class="nav-link pl-0  {% block active_art %}
                             
-                        {% endblock active_art %}" href="art"><i class="bi bi-palette pr-1 "></i>Art and
+                        {% endblock active_art %}" href="art"><i class="bi bi-palette pr-1 "></i>Art
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-0  {% block active_gallery %}
+                            
+                        {% endblock active_gallery %}" href="gallery"> <i class="bi bi-folder pr-1"></i>
                             Gallery</a>
                     </li>
 
@@ -72,14 +71,63 @@
 
                 </ul>
             </div>
-            <a class="navbar-brand" href="/"><img class="rounded-circle" src="../assests/images/jss.svg" height="25"
-                    width="41" /></a>
+            <a class="navbar-brand d-none d-lg-block" href="/"><img class="rounded-circle"
+                    src="../assests/images/jss.svg" height="25" width="41" /></a>
+            <button class=" navbar-toggler ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar01"
+                aria-controls="Navbar01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </nav>
     {% block body %}
 
     {% endblock body %}
-
+    <footer>
+        <div class="footer">
+            <div class="container-fluid ">
+                <div class="footer-social-link row justify-content-between">
+                    <ul class="left">
+                        <li>
+                            <a href="#"><i class="facebook">
+                                    <i class="fab fa-facebook "></i>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="google-plus">
+                                    <i class="fab fa-google-plus"></i>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <span>Copyright © 2021, All Right Reserved VYOMTechnical</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>

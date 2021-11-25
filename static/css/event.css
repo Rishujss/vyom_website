@@ -9,8 +9,6 @@
   
   body {
     font-family: "Noto Sans JP", sans-serif;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     overflow: hidden;
   }
 
@@ -22,19 +20,17 @@
   .event_container{
     margin-top: 75px;
     margin-left: 15px;
-
   }
   
   .cards {
-   height: 700px;
+   height: 500px;
   }
   
   .event_card {
     position: relative;
     display: block;
-    
     width: 700px;
-    height: 50%;
+    height: 350px;
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
@@ -68,7 +64,7 @@
     gap: 2em;
     padding: 2em;
     border-radius: calc(var(--curve) * 1px) 0 0 0;
-    background-color: var(--surface-color);
+    background-color: #d4b0b0;
     transform: translateY(-100%);
     transition: 0.2s ease-in-out;
   }
@@ -84,7 +80,6 @@
   
   .card__arc path {
     fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
   }
   
   .event_card:hover .card__header {
@@ -120,7 +115,7 @@
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #d7bdca;
+    color: #ebc1d6;
     font-family: "MockFlowFont";
     display: -webkit-box;
     -webkit-box-orient: vertical;

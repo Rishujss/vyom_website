@@ -4,36 +4,71 @@ active
 {% endblock active_about %}
 {% block body %}
 
-<section>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aboutus.css') }}">
+<section class="container">
     <div class="sample-header">
-        <div class="sample-header-section">
-            <h1>व्योम परिवार</h1>
+        <div class="sample-header-section text-center">
+            <h1>About Us</h1>
             <h2></h2>
         </div>
     </div>
     <div class="sample-section-wrap">
-        <div class="sample-section">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim. </p>
-
-            <p>Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
-                Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum
-                volutpat pretium libero. Cras id dui. Aenean ut.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim. </p>
-
-            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-                Cras dapibus. Vivamus elementum semper nisi. Aenean
-                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
-                varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-                ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </p>
+        <div class="sample-section text-justify">
+            <p>A sad side effect of globalization has been a gradual cutoff and diminishing importance for local
+                languages, especially in urban areas like Noida. It then becomes more and more important to hold onto
+                one’s culture. The Vyom celebrates all things Indian and then some. Indeed, most activities show
+                remarkable maturity and brilliant thinking of the participants. With other entertaining events like Meri
+                Kalam Se (Poetry Competition), the Vyom has made a special place for itself in JSS. </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Michele Miller</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Patricia Knott</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Justin Ramos</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Mary Huntley</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
