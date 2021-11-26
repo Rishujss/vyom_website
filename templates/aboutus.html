@@ -70,7 +70,73 @@ active
                 </div>
             </div>
         </div>
-    </div>
+
+        <hr>
+        <div class="row">
+            <div class="a-box col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-container">
+                    <div class="img-inner">
+                        <div class="inner-skew">
+                            <img src="../images/team/Amit.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h3>Amit Ranjan Yadav</h3>
+                    <div>
+                        Founder
+                    </div>
+                </div>
+            </div>
+            <div class="a-box col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-container">
+                    <div class="img-inner">
+                        <div class="inner-skew">
+                            <img
+                                src="https://images.unsplash.com/photo-1584791097929-aa825fe8e1e1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h3>A blue bird</h3>
+                    <div>
+                        This a demo experiment to skew image container. It looks good.
+                    </div>
+                </div>
+            </div>
+            <div class="a-box col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-container">
+                    <div class="img-inner">
+                        <div class="inner-skew">
+                            <img
+                                src="https://images.unsplash.com/photo-1584791097929-aa825fe8e1e1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h3>A blue bird</h3>
+                    <div>
+                        This a demo experiment to skew image container. It looks good.
+                    </div>
+                </div>
+            </div>
+            <div class="a-box col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-container">
+                    <div class="img-inner">
+                        <div class="inner-skew">
+                            <img
+                                src="https://images.unsplash.com/photo-1584791097929-aa825fe8e1e1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h3>A blue bird</h3>
+                    <div>
+                        This a demo experiment to skew image container. It looks good.
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 
 
@@ -78,22 +144,5 @@ active
 
 
 {% endblock body %}
-
-<script>
-    function parallax_height() {
-        var scroll_top = $(this).scrollTop();
-        //var sample_section_top = $(".sample-section").offset().top;
-        var header_height = $(".sample-header-section").outerHeight();
-        $(".sample-section").css({ "margin-top": 950 });
-        $(".sample-header").css({ height: 2100 - scroll_top });
-    }
-    parallax_height();
-    $(window).scroll(function () {
-        parallax_height();
-    });
-    $(window).resize(function () {
-        parallax_height();
-    });
-</script>
 
 </html>
