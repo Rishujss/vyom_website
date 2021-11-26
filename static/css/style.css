@@ -58,9 +58,9 @@ html,body{
   position: relative;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 14px;
+  font-size: 14px !important;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 600 !important;
   color: rgba(0, 0, 0, 0.6);
   white-space: nowrap;
   transition: 0.3s;
@@ -282,7 +282,7 @@ html,body{
 }
 .footer{
   background-color: rgb(211, 200, 200);
-  padding: 10px 0%;
+  padding: 10px 0 0 0;
   align-items: center;
 }
 .right{

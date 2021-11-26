@@ -49,3 +49,13 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     transition: 0.3s;
   }
+  @media (max-width: 420px) {
+    .gallery__column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .gallery{
+      display: block;
+    }
+  }

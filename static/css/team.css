@@ -64,7 +64,7 @@
 }
 .card .card-header {
   position: relative;
-  height: 175px;
+  height: 248px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +126,7 @@
   background: rgba(210 188 238 / 95%);
 }
 .card:hover .card-meta, .card:focus .card-meta {
-  max-height: 1em;
+  max-height: 1.5em;
 }
 
 img {
@@ -135,9 +135,7 @@ img {
 
 body {
   background: #f0f0f0;
-  font-size: 17px;
-  line-height: 1.4;
-  font-family: 'Jaldi', sans-serif;
+  
 }
 
 * {
@@ -153,4 +151,36 @@ body {
   -o-transition-timing-function: linear;
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 1.5em;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #504f4c, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+a{
+  color: rgb(85, 81, 81);
 }
