@@ -41,7 +41,7 @@ html,body{
   align-items: center;
 }
 .navbar-brand{
-  margin-right: 2rem;
+  margin-right: 2rem !important;
 }
 .navbar-collapse li {
   position: relative;
