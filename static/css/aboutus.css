@@ -18,8 +18,9 @@
     font-weight: 400;
   }
   .sample-section-wrap {
+    color: aliceblue;
     position: relative;
-    background-color: rgb(133, 119, 119);
+    background-color: rgb(199, 104, 104);
     opacity: 1;
   }
   .sample-section {
@@ -36,6 +37,7 @@
     margin-bottom: 30px;
     background-color: #f7f5ec;
     text-align: center;
+    height: 350px;
     overflow: hidden;
     position: relative;
   }
