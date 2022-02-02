@@ -1,4 +1,7 @@
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Estonia&family=Raleway:wght@100&display=swap');
 
 html,body{
@@ -9,16 +12,16 @@ html,body{
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
+  /* transition: all 0.5s;
   z-index: 997;
-  background: #fff;
+  background: #fff; */
   box-shadow: 0px 5px rgb(211 205 205 / 50%);
 }
 
-#header.header-scrolled, #header.header-inner-pages {
+/* #header.header-scrolled, #header.header-inner-pages {
   background: #fff;
   padding: 10px 0;
-}
+} */
 
 #header .navbar-brand img{
   margin: 3px;
@@ -101,9 +104,6 @@ html,body{
   color: rgb(0, 0, 0);
 }
 
-.bi-list{
-  color:#eee;
-}
 .content{
   height: 700px;
   display: flex;
@@ -117,28 +117,7 @@ html,body{
 .content img{
   border-radius: 5%;
 }
-#hero:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
-#hero .container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  animation: fade-in 2s  ease-in-out;
-}
 @keyframes fade-in{
   from {top: 600px; opacity: 0;}
   to {top: 0px;}
@@ -153,62 +132,7 @@ html,body{
   font-size: 25px;
   font-family: merriweather_extendedLtIt,lailaregular,MehrNastaliqRegular;
 }
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #fff;
-}
 
-#hero h2 {
-  color: #eee;
-  margin-bottom: 50px;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  display: inline-block;
-  padding: 10px 35px 10px 35px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #ff1717;
-  border: 2px solid #ff1717;
-}
-
-#hero .btn-get-started:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: inline-block;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero .btn-watch-video i {
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
-}
-
-#hero .btn-watch-video:hover i {
-  color: #ff1717;
-}
 /* Carousel */
 .header_carousel_container {
   margin-top: 40px;
@@ -220,28 +144,7 @@ html,body{
   height: 500px;
 }
 
-
-/* 
- */
-.word-heading{
-   padding: 10px 0px 15px 0px;
-   align-items: center;
-   justify-content: center;
-   font-size: 2.5rem;
-   font-weight: 600;
-   color: chocolate;
-   font-style: italic;
-}
-.word-content{
-  padding: 20px 0px 35px 0px;
-   align-items: center;
-   justify-content: center;
-   font-style: italic;
-   font-size: 1.6rem;
-}
-
 /* Footer */
-
 .footer-social-link h3 {
   color: #fff;
   font-size: 24px;
@@ -288,9 +191,6 @@ html,body{
 .right{
   padding-right: 10px;
 }
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 
 .home{

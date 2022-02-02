@@ -5,7 +5,11 @@ import json
 
 app = Flask(__name__, static_url_path='')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/vyom'
+# local database connection using xampp
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/vyom'
+
+# online free database using https://www.freesqldatabase.com 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql6468004:FazEykrgDG@sql6.freesqldatabase.com:3306/sql6468004'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
