@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block active_about %}
+active
+{% endblock active_about %}
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aboutus.css') }}">
+<section class="container mb-2">
+    <div class="sample-header">
+        <div class="sample-header-section text-center">
+            <h1>About Us</h1>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="sample-section-wrap">
+        <div class="sample-section text-justify">
+            <p>A sad side effect of globalization has been a gradual cutoff and diminishing importance for local
+                languages, especially in urban areas like Noida. It then becomes more and more important to hold onto
+                one’s culture. The Vyom celebrates all things Indian and then some. Indeed, most activities show
+                remarkable maturity and brilliant thinking of the participants. With other entertaining events like Meri
+                Kalam Se (Poetry Competition), the Vyom has made a special place for itself in JSS. </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="../images/principal.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Dr. Gurulingappa M Patil</h3>
+                        <h4 class="title">Principal</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="../images/jagdish.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Dr. Jagadish Rampur Shivanna</h3>
+                        <h4 class="title">Dean Academics & Chief Warden</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="../images/prashant.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Dr. Prashant Chauhan</h3>
+                        <h4 class="title">Dean Student Welfare</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="../images/roli1.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Dr. Roli Verma</h3>
+                        <h4 class="title">HOD (Chemistry) & Cultural Head </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+</main>
+
+
+{% endblock body %}
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mx-3">Admin Panel</h1>
+        <div style="display:flex;justify-content: end;">
+            <a href="logout" class="btn btn-success" type="button">Logout</a>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone no.</th>
+                    <th>Message</th>
+                    <th>Date Posted</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for form in forms %}
+                <tr>
+                    <td>{{form.sno}}</td>
+                    <td>{{form.name}}</td>
+                    <td>{{form.email}}</td>
+                    <td>{{form.phonenum}}</td>
+                    <td>{{form.message}}</td>
+                    <td>{{form.dateposted}}</td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

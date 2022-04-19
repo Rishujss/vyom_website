@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block active_contact %}
+active
+{% endblock active_contact %}
+{% block body %}
+
+
+<main>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact_style.css') }}">
+    <section class="row row-content bg-form">
+        <div class="container contact_container">
+            <div class="contact_form">
+                <div class="col-12 mb-5">
+                    <h2>Contact-Us</h2>
+                </div>
+                <div class="col-12 ">
+                    <form name="sentMessage" action="/contact" method="post" novalidate>
+                        <div class="form-group row">
+                            <label for="name" class="col-md-2 col-form-label">Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="name" name="names" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label" pattern="[0-9]{10}">Mobile
+                                number</label>
+                            <div class="col-md-10">
+                                <input type="tel" class="form-control" id="telnum" name="phonenum"
+                                    placeholder="Mobile number">
+                            </div>
+                        </div>
+                </div>
+                <div class="col-12 ">
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-6">
+                            <textarea class="form-control" name="message" id="feedback" cols="10" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset col-md-10">
+                            <button type="submit" name="message" class="btn btn-blue mt-2 send_btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock body %}

@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block active_art %}
+active
+{% endblock active_art %}
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/art.css') }}">
+<div class="gallery art_container column">
+    <div class="gallery__column">
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art4.png" alt="Portrait by Prakhar" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Prakhar</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art5.png" height="350px" alt="Portrait by Swati" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Swati</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/Art2.png" alt="Portrait by Ritu" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Ritu</figcaption>
+            </figure>
+        </a>
+    </div>
+
+    <div class="gallery__column">
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/Art1.png" alt="Portrait by Ritu" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Ritu</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art6.png" height="452px" alt="Portrait by Swarnima"
+                    class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Swarnima</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art7.png" height="334px" alt="Portrait by Rudrakshi"
+                    class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Rudrakshi</figcaption>
+            </figure>
+        </a>
+    </div>
+
+    <div class="gallery__column ">
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art8.png" alt="Portrait by BhagyaShree" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by BhagyaShree</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art9.png" alt="Portrait by Anamika" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Anamika</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art11.png" height="297px" alt="Portrait by Aditya" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Aditya</figcaption>
+            </figure>
+        </a>
+    </div>
+
+    <div class="gallery__column">
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art10.png" alt="Portrait by Aditya" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Aditya</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art12.png" height="327px" alt="Portrait by Harshita"
+                    class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Harshita</figcaption>
+            </figure>
+        </a>
+
+        <a class="gallery__link">
+            <figure class="gallery__thumb">
+                <img src="../images/Instagram/art13.png" alt="Portrait by Harshita" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Harshita</figcaption>
+            </figure>
+        </a>
+    </div>
+
+</div>
+
+{% endblock body %}

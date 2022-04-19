@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block active_gallery %}
+active
+{% endblock active_gallery %}
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/gallery.css') }}">
+<!-- Photo Grid -->
+<div class="row">
+    <div class="column">
+        <img src="../images/gallery/gallery1.png" style="width:100%">
+        <img src="../images/gallery/gallery8.png" style="width:100%">
+        <img src="../images/gallery/gallery7.png" style="width:100%">
+        <img src="../images/gallery/gallery13.png" height="511px" style="width:100%">
+
+    </div>
+    <div class="column">
+        <img src="../images/gallery/gallery2.png" style="width:100%">
+        <img src="../images/gallery/gallery5.png" style="width:100%">
+        <img src="../images/gallery/gallery3.png" style="width:100%">
+        <img src="../images/gallery/gallery11.png" style="width:100%">
+
+    </div>
+    <div class="column">
+        <img src="../images/gallery/gallery12.png" height="550px" style="width:100%">
+        <img src="../images/gallery/gallery9.png" style="width:100%">
+        <img src="../images/gallery/gallery10.png" style="width:100%">
+        <img src="../images/gallery/gallery16.png" style="width:100%">
+
+
+    </div>
+    <div class="column">
+        <img src="../images/gallery/gallery4.png" style="width:100%">
+        <img src="../images/gallery/gallery14.png" style="width:100%">
+        <img src="../images/gallery/gallery6.png" height="232px" style="width:100%">
+        <img src="../images/gallery/gallery15.png" style="width:100%">
+
+
+    </div>
+
+</div>
+
+{% endblock body %}
